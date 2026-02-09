@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+  background: #060922;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+	max-width: 1200px !important;
+}
+
+.linkedin_wrapper {
+	padding: 80px 0;
+}
+
+.linkedin_wrapper h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.linkedin_wrapper h2 span {
+	color: #0077B5;
+}
+
+.linkedin_wrapper .linkedin_item {
+	border-radius: 10px;
+	overflow: hidden;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.linkedin_wrapper .linkedin_item figure {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+}
+
+.linkedin_wrapper .linkedin_item:hover figure::before {
+	visibility: visible;
+	opacity: 1;
+}
+
+.linkedin_wrapper .linkedin_item figure::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 47%);
+    z-index: 1;
+    transition: 0.4s all ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.linkedin_wrapper .linkedin_item:hover figure ul {
+	visibility: visible;
+	opacity: 1;
+}
+
+.linkedin_wrapper .linkedin_item figure ul {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.linkedin_wrapper .linkedin_item figure ul li {
+	display: inline-block;
+}
+
+.linkedin_wrapper .linkedin_item figure ul li a {
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0 4px 25px 4px;
+}
+
+.linkedin_wrapper .linkedin_item:hover figure ul li a {
+	visibility: visible;
+	opacity: 1;
+}
+
+.linkedin_wrapper .linkedin_item figure ul li a:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+.linkedin_wrapper .linkedin_item figure ul li .bg1 {
+	background: #0077B5;
+	transition: 0.2s all ease-in-out;
+}
+
+.linkedin_wrapper .linkedin_item figure ul li .bg2 {
+	background: #1877F2;
+	transition: 0.3s all ease-in-out;
+}
+
+.linkedin_wrapper .linkedin_item figure ul li .bg3 {
+	background: #1DA1F2;
+	transition: 0.4s all ease-in-out;
+}
+
+.linkedin_wrapper .linkedin_item figure ul li .bg4 {
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+	transition: 0.5s all ease-in-out;
+}
+
+.linkedin_wrapper .linkedin_item figure img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.4s all ease-in-out;
+	border-radius: 10px;
+}
+
+.linkedin_wrapper .linkedin_item:hover figure img {
+	transform: scale(1.10);
+}
+
+.linkedin_wrapper .linkedin_item h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.linkedin_wrapper .linkedin_item h3 a {
+	  color: #ffffff;
+	  text-decoration: none;
+	  transition: 0.4s all ease-in-out;
+}
+
+.linkedin_wrapper .linkedin_item h3 a:hover {
+	  opacity: 0.7;
+}
+
+.linkedin_wrapper .linkedin_item p {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgb(196 196 196);
+    font-weight: 500;
+}
